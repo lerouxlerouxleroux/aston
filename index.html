@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Accueil</title>
+    <meta charset="utf-8">
+
+    <style type="text/css">
+        body {
+            background:;
+        }
+        nav {
+            height:150px;
+            background: #24445C;
+            width:100%;
+            overflow: auto;
+
+        }
+        nav ul {
+            float: right;
+        }
+        nav li {
+            display: inline-block;
+            padding-right: 15px;
+            padding-left: 15px;
+            color: white;
+            padding-top: 30px;
+            font-size: 20px;
+
+        }
+        
+        li {
+            color:white;
+
+        }
+        main {
+            padding-top: 50px;
+            width: 100%;
+            height: 750px;
+            background: #B0E0E6;
+            padding-bottom: 10px; /*pour que p se trouvant dans div se trouvant dans main puise se mettre au milieu sans toucher le footer*/
+
+        }
+        .text {
+            height: 150px;
+            width: 100%;
+            background: #24445C;
+            margin-top: 0px;
+
+
+        }
+       
+         
+        
+         p {
+            background: rgba(128,128,128,0.3);
+            margin-left: auto;
+            margin-right: auto;
+            width: 250px;
+            height: 150px;
+            margin-top: 200px;
+            border:1px solid #9FC6FF;
+            padding:5px;
+           -moz-border-radius:20px 20px 20px 20px;
+           -webkit-border-radius:20px 20px 20px 20px;
+           border-radius:20px 20px 20px 20px;
+           
+            }
+
+       
+
+        
+        a  {
+            color: white;
+            text-decoration:none;
+        }
+        
+        .logo {
+             width: 140px;
+             height: 140px;
+             overflow: hidden;
+             background: url(../aston/image/logo.png); /*en chemin relatif*/
+             background-repeat: no-repeat; /*repeat-x, repeat Z, no repeat*, cover sur les photos de profils*/
+             background-size: contain; 
+             float: left;
+             margin-bottom: 2px;
+             margin-left: 5px;
+             margin-top: 4px;
+
+             }
+
+             @keyframes AutoSlide {
+              0%, 15%, 100% {
+             left: 0px; /*1ère image*/
+              }
+             35%, 50% {
+             left: -150px; /*2ème image*/
+              }
+             70%, 85% {
+             left: -300px; /*3ème image*/
+             }
+             }
+            #slideshow {
+            position: relative;
+            width: 250px;
+            height: 250px;
+            margin:  20px auto;
+            overflow: hidden;
+            }
+            #sContent li {
+            display: inline;
+            }
+            #sContent {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 450px;
+            margin: 0;            
+            padding: 0;
+    
+            /*CSS3 keyframes animation*/
+            animation-name: AutoSlide;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            }
+            
+            
+            aside {
+                padding-top: 2px;
+            }
+            
+            ul {
+                float: left;
+                margin-left: 300px;
+                list-style: none;
+            }
+
+
+
+
+    </style>
+</head>
+<body>
+<header>
+     <nav>
+         <div class="logo"></div>
+    
+        <ul>
+            <li><a href="">Accueil</a></li>
+            <li><a href="file:///C:/wamp64/www/projet/aston/contact.html">Nous contacter</a></li>
+            <li><a href="file:///C:/wamp64/www/projet/aston/index.html">Espace membre</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <div class="coin">
+
+    <p> 
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+         
+    </p>
+         
+    </div> 
+
+
+<div id="slideshow">
+    <ul id="sContent">
+           <li><img src="../aston/image/logo.png" alt="Image bleue" /></li>
+           <li><img src="../aston/image/logo.png" alt="Image verte" /></li>
+           <li><img src="../aston/image/logo.png" alt="Image brune" /></li>
+    </ul>
+
+
+</div>
+</main>
+
+<footer>
+    <aside class="text">
+    <ul>
+        <li>FAQ</li>
+        <li>hj</li>
+        <li>jhjk</li>
+        
+    </ul>
+     <ul>
+        <li>Plan du site</li>
+        <li>hj</li>
+        <li>jhjk</li>
+        
+    </ul>
+     <ul>
+        <li>Contact</li>
+        <li>hj</li>
+        <li>jhjk</li>
+        
+    </ul>
+       
+    </aside>
+    
+
+</footer>
+</body>
+</html>
